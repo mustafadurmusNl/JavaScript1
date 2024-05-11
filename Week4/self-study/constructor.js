@@ -47,3 +47,7 @@ function Person(name, age) {
 console.log(c1)//UNDEFINED
 
 console.log(c2)//Car { props: { make: 'Tesla', model: 'model 3' } }
+//ou may have read about constructor or factory functions before and are now questioning what the difference is. 
+//From an outside perspective it does look like it is very similar but there are some advantages to using 
+           
+         
