@@ -51,7 +51,7 @@ function PersonFunction(name, age) {
     #name;    // #symbol for privatizing
   
     constructor(name, age) {
-      this.name = name;
+      this.#name = name;
       this.age = age;
     }
   
@@ -63,7 +63,7 @@ function PersonFunction(name, age) {
   //console.log(reema.#name); // undefined
   console.log(reema.getName()); // Reemaa  ?????
 
-console.log(1111111111)
+
 
 
   class Person2 {
@@ -88,3 +88,4 @@ console.log(1111111111)
   }
   const emke = new Person2("Emke Smith", 25);
   console.log(emke.getName()); // Emke Smith
+  console.log(1239)

@@ -1,0 +1,18 @@
+{
+  "name": "self-study",
+  "version": "1.0.0",
+  "description": "",
+  "main": "nodemon_practice.js",
+  "scripts": {
+    "start": "nodemon nodemon_practice.js",
+    "test": "jest --colors"
+    
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.0"
+  }
+}

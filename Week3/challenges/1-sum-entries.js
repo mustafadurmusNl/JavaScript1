@@ -32,3 +32,6 @@ let result;
 // TEST CODE, do not change
 console.assert(result === 514579, `The result is not correct, it is ${result}, but should be 514579`);
 console.log(result)
+console.log(44884)
+const total=list.reduce(  (acc,current)=> acc+current,0)
+console.log(total)

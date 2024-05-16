@@ -10,7 +10,7 @@ Employee.prototype.fullName=function(){                             //we put thi
     console.log(`my name is ${this.name} and my age is${this.age}`)  //every object we create can acess this function by inheritance from prototype
 }                                                                 //in this way we same memory
 //every object we create by constrcutor can access the above funtion created in the protoype by inheritance
-    const emp1=new Employee('Hanna',77)
+    const emp1=new Employee('Jackson',77)
     console.log(emp1)
 
     console.log(emp1.toString())//toString is a method of object prototype and our
@@ -37,3 +37,43 @@ const person = {    //an object
 
 
   //
+  const obj={
+    test1:function(){
+        console.log('test1')
+    },
+    test2:function(){
+        console.log('test2')
+    }
+  }
+  const emp=Object.create(obj)
+  emp.name='Peter'
+  emp.age=22
+  console.log(emp.name)
+  //
+//another exm  abit advanced and inheritance 
+function Person3(){   //constructor without parameter
+
+}
+Person3.prototype.test3=function(){
+    console.log('test3 is a function defined in prototype of Person3 constructor ')
+}
+Person3.prototype.test4=function(){
+    console.log('test4')
+}
+const person3 =new Person3();
+   console.log(person3)
+   //another constructor
+function Employee3(name,age){
+     this.name=name
+     this.age=age
+}
+Employee3.prototype=Object.create(Person3.prototype)//emp3 prototype inherit the features of Person3 prototype
+const emp3=new Employee3('emke',35)
+console.log(emp3.name)//emke
+console.log(emp3)//it inherit prototypes of Person3
+console.log(emp3.test3)//it can access test3 function of Person3 prototype
+emp3.test3()//test3 is a function defined in prototype of Person3 constructor
+Employee3.prototype.myTest=function(){
+    console.log('myTest function defined in Employee prototype')
+}
+console.log(emp3)

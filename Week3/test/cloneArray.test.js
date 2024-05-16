@@ -30,3 +30,9 @@ test('multiply',()=>{
 //     const data=await functions.fetchUser();
 //     expect(data.name).toEqual('Leanne Graham')
 // })
+function addNum(a,b){
+    return a+b
+}
+test('add 2two numbers',()=>{
+  expect(addNum(2,5)).toBe(7)
+})
